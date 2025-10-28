@@ -1,0 +1,278 @@
+ body {
+            transition: background-color 0.5s, color 0.5s;
+            overflow-x: hidden;
+        }
+
+        body.dark-mode {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .navbar.dark-mode {
+            background-color: #000 !important;
+        }
+
+        .navbar.dark-mode .nav-link,
+        .navbar.dark-mode .navbar-brand {
+            color: white !important;
+        }
+
+        .navbar.dark-mode .nav-link:hover {
+            color:rgb(112, 44, 112) ;
+        }
+
+        /* 🌙 Toggle Button */
+        #themeToggle {
+            background: rgb(112, 44, 112);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        #themeToggle:hover {
+            background: rgb(112, 44, 112);
+        }
+        .navbar{
+            position: fixed;
+            width: 100%;
+        }
+        /* ✅ Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 4rem 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-top: 30px;
+        }
+
+        .hero h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 450px;
+            height: 350px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* ✅ About Section */
+        #about-section {
+            padding: 5rem 1.5rem;
+        }
+
+        .about-section h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .about p {
+            font-size: 1rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .about-content img {
+             width: 100%;
+            max-width: 450px;
+            height: 350px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* ✅ Skills Section */
+        .skill-section {
+            padding: 4rem 1.5rem;
+            text-align: center;
+        }
+
+        .skill-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: 0.3s;
+            background-color: white;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            background-color: rgb(112, 44, 112);
+            color: white;
+        }
+
+        body.dark-mode .skill-card {
+            background-color: #222;
+            border-color: #555;
+        }
+
+        body.dark-mode .skill-card:hover {
+            background-color: rgb(112, 44, 112);
+            color: white;
+        }
+
+        /* ✅ Projects Section */
+        .myproject-container {
+            padding: 4rem 1.5rem;
+            text-align: center;
+        }
+
+        .boxes img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.4s, filter 0.4s;
+        }
+
+        .boxes img:hover {
+            transform: scale(1.05);
+            filter: brightness(70%);
+        }
+
+        #viewMoreBtn {
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            background: transparent;
+        }
+
+        #viewMoreBtn:hover {
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        body.dark-mode #viewMoreBtn {
+            color: white;
+            border-color: white;
+        }
+
+        body.dark-mode #viewMoreBtn:hover {
+            background: white;
+            color: black;
+        }
+
+        /* ✅ Contact Section */
+        .contact-section {
+            padding: 4rem 1.5rem;
+        }
+
+        .contact-section .form-control {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            border-radius: 0;
+        }
+
+        .contact-section .form-control:focus {
+            border-color: #1f3a93;
+            box-shadow: none;
+        }
+
+        .submit-btn {
+            background-color: #1f3a93;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 6px;
+        }
+
+        .submit-btn:hover {
+            background-color: #162d6e;
+        }
+
+        body.dark-mode .submit-btn {
+            background-color: rgb(112, 44, 112);
+            color: white;
+        }
+
+        body.dark-mode .submit-btn:hover {
+            background-color: #ddd;
+        }
+
+        /* ✅ Responsive Adjustments */
+        @media (max-width: 992px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero h3 {
+                font-size: 1.25rem;
+            }
+
+            .about-content,
+            .about-image {
+                padding: 2rem 1rem;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .skill-card img {
+                width: 40px;
+            }
+
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+            }
+
+            .about-section h1 {
+                font-size: 1.8rem;
+            }
+
+            .contact-section h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #themeToggle {
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+
+            .navbar-brand {
+                font-size: 1.1rem;
+            }
+
+            .submit-btn {
+                width: 100%;
+            }
+
+            .about p {
+                font-size: 0.95rem;
+            }
+        }

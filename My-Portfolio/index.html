@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ezhilarasan Portfolio</title>
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ✅ Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3" id="mainNavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Ezhil.Devs</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home-section">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skill-section">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project-section">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+                    <li class="nav-item ms-3"><button id="themeToggle">🌙 Dark Mode</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ✅ Hero Section -->
+    <section class="hero container-fluid" id="home-section">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h1>Hi, I'm <span style="color:rgb(112, 44, 112);">Ezhilarasan</span></h1>
+                <h3>Front-End Developer</h3>
+                <p>I’m a passionate Web Developer specializing in creating responsive, accessible, and user-friendly
+                    websites using modern web technologies. Let’s build something amazing together!</p>
+            </div>
+            <div class="col-md-6 text-center hero-image">
+                <img src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?auto=format&fit=crop&q=60&w=600"
+                    alt="profile" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ About Section -->
+    <section id="about-section">
+        <h1>About Me</h1>
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6 about about-image">
+                <p>
+                    <span style="font-size: 18px; font-weight: bold;">Hi, I’m</span>
+                    <span style="color: rgb(112, 44, 112); font-weight: bold; font-size: 30px;">Ezhilarasan</span>, a Front-End Developer based in
+                    Bangalore.
+                    I love crafting clean, user-friendly digital experiences that make everyday interactions smoother
+                    and more
+                    enjoyable.
+                    <br><br>
+                    Over the past year, I’ve collaborated with startups and design studios to bring intuitive interfaces
+                    to life.
+                    My toolkit includes <strong>Figma, HTML, and Bootstrap</strong> — but my favorite tool is
+                    <strong>Canva</strong>, because I love designing
+                    with empathy and creativity.
+                    <br><br>
+                    When I’m not developing, I’m exploring art galleries, reading about behavioral psychology, or
+                    sipping
+                    cappuccinos at local cafés.
+                    <br><br>
+                    Let’s connect — I’m always excited to discuss new ideas or projects!
+                </p>
+            </div>
+            <div class="col-12 col-md-6 about about-content">
+                <img src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=600"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Skills Section -->
+    <section class="skill-section" id="skill-section">
+        <h2 class="mb-5">My Skills</h2>
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/?size=100&id=20909&format=png" width="50">
+                        <h5>HTML</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/?size=100&id=21278&format=png" width="50">
+                        <h5>CSS</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/?size=100&id=laVIsJnTtYoj&format=png" width="50">
+                        <h5>JavaScript</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/?size=100&id=123603&format=png" width="50">
+                        <h5>React</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/?size=100&id=PndQWK6M1Hjo&format=png" width="50">
+                        <h5>Bootstrap</h5>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="skill-card">
+                        <img src="https://img.icons8.com/?size=100&id=20906&format=png" width="50">
+                        <h5>Git</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Projects Section -->
+    <section class="myproject-container" id="project-section">
+        <h2 class="mb-5">My Projects</h2>
+        <div class="container">
+            <div class="row g-4" id="imageGrid">
+                <div class="col-12 col-md-4 boxes-item">
+                    <div class="boxes"><img src="https://preview.colorlib.com/theme/orbit/images/work_5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 boxes-item">
+                    <div class="boxes"><img src="https://preview.colorlib.com/theme/orbit/images/work_7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 boxes-item">
+                    <div class="boxes"><img src="https://preview.colorlib.com/theme/orbit/images/work_6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 boxes-item">
+                    <div class="boxes"><img src="https://preview.colorlib.com/theme/orbit/images/work_3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 boxes-item">
+                    <div class="boxes"><img src="https://preview.colorlib.com/theme/orbit/images/work_4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 boxes-item">
+                    <div class="boxes"><img src="https://preview.colorlib.com/theme/orbit/images/work_1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button id="viewMoreBtn">View More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Contact Section -->
+    <section class="contact-section" id="contact-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" class="form-control" id="name" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn w-100">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start l-5">
+                    <h4>Contact Information</h4>
+                    <p>📍 Bangalore, India</p>
+                    <p>📞 +91 6379303755</p>
+                    <p>✉️ ezhilarasan0624@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
